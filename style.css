@@ -8,14 +8,72 @@ body {
     flex-direction: column;
 }
 
+/* this is the base ui */
 .container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
     margin-top: 100px;
     width: 440px;
     height: 620px;
     background-color: powderblue;
     border-radius: 18px;
     border: 3px solid black;
+}
+
+/* this is the display ui*/
+.display {
+    display: flex;
+    flex-direction: column;
+    margin: 24px auto;
+    width: 380px;
+    height: 100px;
+    background-color: aliceblue;
+    border-radius: 18px;
+    border: 3px solid black;
+}
+
+.display-show {
+    margin: auto 8px;
+    font-size: 24px;
+}
+
+#input {
+    text-align: left;
+    margin-top: 20px;
+}
+
+#output {
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+.keypad {
+    display: flex;
+    flex-direction: column;
+    margin: 24px auto;
+    width: 380px;
+    height: 420px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    width: 372px;
+    align-items: center;
+}
+
+button {
+    background-color: azure;
+    font-size: 28px;
+    width: 72px;
+    height: 60px;
+    border-radius: 8px;
+}
+
+#equal {
+    width: 172px;
 }
