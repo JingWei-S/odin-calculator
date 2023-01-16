@@ -165,6 +165,9 @@ const buttonBack = document.querySelector("#clear");
 buttonBack.addEventListener("click", deleteChar);
 function deleteChar () {
     const expression = input.textContent;
+    if (!expression) {
+        output.textContent = '';
+    }
     if (expression[expression.length-1] == ' ') {
         input.textContent = input.textContent.slice(0, -3);
     } else {
