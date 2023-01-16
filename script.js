@@ -201,3 +201,4 @@ function detectOperator (expression) {
 
 // improve precision
 const strip = val => Number.parseFloat(val.toPrecision(15))
+
